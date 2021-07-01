@@ -8,8 +8,8 @@ for i in range(5):
     if num >=80:
         stu +=1
 tot = sum(scores)
-avg = tot/5
+avg = tot/len(scores)
 
 print('총점 : ',tot)
-print('평균 : ',avg)
+print('평균 : %.2f'%avg)
 print('80점 이상 학생 : %d명'%stu)

@@ -10,9 +10,9 @@ for i in range(man):
     if num >=80:
         stu +=1
 tot = sum(scores)
-avg = tot/5
+avg = tot/len(scores)
 scores.sort(reverse=True)
 print('총점 : ',tot)
-print('평균 : ',avg)
+print('평균 : %.2f'%avg)
 print('80점 이상 학생 : %d명'%stu)
 print('점수 내림차순 정렬 : ', scores)
